@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #DEC0F1
+            } 
+            h1 {
+                color: #252627;
+                font-size: 60px;
+                font-family: "Arial";
+                text-align: center;
+            }
+            .text {
+                color: #0C7C59;
+                font-size: 30px;
+                font-family: "Arial";
+                text-align: left;
+            }
+            p {
+                color: rgb(136, 6, 119);
+                font-size: 15px;
+                font-family: "Arial";
+                text-align: left;
+            }
+            a {
+                color:rgb(32, 38, 90); 
+                padding: 15px;
+                font-size: 25px;
+                font-family: "Arial";
+                text-align: right;
+            }
+            .collapsible {
+                background-color: rgb(92, 2, 92);
+                color: rgb(255, 212, 212);
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: rgb(59, 6, 55);
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Website</title>
+      </head>
+      <body>
+        <div class =""></div>
+        <nav>
+            <a href="./index.html" >Home</a>
+            <a href="./about.html" >About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <h1>Hi, I'm Hillary!</h1>
+        <div class = "text">
+        <h2>I'm a college student, musician and programmer. <br></br:>Scroll down to learn about me.</h2>
+        <br><br>
+        <button type="button" class="collapsible">Who am I?</button>
+        <div class = "content">
+            <p>I am a first year student at Smith College, class of 2025. I am a Computer Science and Music double major. When I'm not coding, you can find me singing in my college's choir, playing the viola in the orchestra or attempting to play the piano.</p>
+        </div>
+        <button type="button" class="collapsible">My projects</button>
+        <div class = "content">
+            <a href= "github.com">My github</a>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+
+    </body>
+</html>
