@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-color: #DEC0F1
-            } 
-            h1 {
-                color: #252627;
-                font-size: 60px
-            }
-            p {
-                color: #0C7C59;
-                font-size: 20px
-            }
-        </style>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Personal website</title>
-      </head>
-      <body>
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
-      </body>
-    </html>
-</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div class="header" id="myHeader">
+  <h2>My Header</h2>
+</div>
+
+<div class="content">
+  <h3>On Scroll Sticky Header</h3>
+  <p>The header will stick to the top when you reach its scroll position.</p>
+  <p>Scroll back up to remove the sticky effect.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente laborum totam. Sapiente vitae consectetur sed dolor unde nesciunt provident culpa fuga atque, minus earum cupiditate facilis iure repellat quos.</p><br><br><br><br><br>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in obcaecati sapiente. Eius itaque veniam dignissimos quas architecto mollitia ad cum cupiditate similique autem, alias neque omnis recusandae perspiciatis repudiandae.</p>
+  <br><br><br><br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cum hic aliquid id ex, amet sit nihil laudantium perferendis. Veniam dolorum placeat cumque esse ratione, accusamus nostrum quos incidunt nam.</p>
+  <br><br><br><br><br><br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum delectus veritatis earum quod, error natus saepe a reprehenderit debitis reiciendis harum atque architecto amet, facere sed provident quo molestias distinctio!</p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+  </body>
+  </html>

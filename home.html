@@ -2,19 +2,49 @@
 <html>
     <head>
         <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                justify-items: normal;
+            }
             body {
-                background-color: #eddef7
+                background-color: #e4caf7;
             } 
             section {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
+                justify-content: space-around;
+                justify-self: normal;
+            }
+            i {
+                display: flex;
+                flex-direction: row;
+                color:  #5b015b;
+                padding-left: 10px;
+                padding-right: 130px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            section.about-me {
+                background-color: rgb(29, 11, 39);
+                flex : 200px;
+                height: 500px;
+                }
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                justify-items: normal;
             }
             h1 {
-                color: rgb(32, 38, 90);
+                color: rgb(24, 0, 37);
                 font-size: 60px;
                 font-family: "Trebuchet MS", sans-serif ;
-                text-align: center;
+                text-align: left;
             }
             h2 {
                 color: #0C7C59;
@@ -29,18 +59,17 @@
                 text-align: left;
             }
             a {
-                color:rgb(32, 38, 90);
+                color: rgb(24, 0, 37);
                 font-size: 25px;
                 font-family: "Trebuchet MS", sans-serif;
-                text-align: right;
                 text-decoration: none;
             }
             .active, a:hover{
-                color:rgb(59, 6, 55)
+                color:rgb(94, 15, 87)
             }
             .collapsible {
                 background-color: rgb(92, 2, 92);
-                color: rgb(255, 212, 212);
+                color: rgb(255, 233, 251);
                 cursor: pointer;
                 padding: 18px;
                 width: 100%;
@@ -50,102 +79,121 @@
                 font-size: 15px;
             }
             .active, .collapsible:hover {
-                background-color: rgb(59, 6, 55);
+                background-color: rgb(29, 11, 39);
             }
 
             .content {
                 padding: 0 18px;
                 display: none;
                 overflow: hidden;
-                background-color: #f5d9f1;
+                background-color: rgb(255, 233, 251);
             }
             nav{
                 text-align: right;
                 color:rgb(32, 38, 90);
-                font-size: 40px;
-                
-                
+                font-size: 40px;  
             }
-            section.about-me {
-                background-color:  rgb(32, 38, 90);
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;}
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
             
-         
-        
-
+            
+             
         </style>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Personal Website</title>
+        <script src="https://kit.fontawesome.com/c69731a102.js" crossorigin="anonymous"></script>
       </head>
       <body>
-        <header>
+        <header id = "myHeader">
+            <div style="display: flex; flex-wrap: nowrap;">
+                <img src = "https://lh3.googleusercontent.com/cknPnLbodWd1LN9GXNoYRWZ-IIPEMBLNf7ZmS1Kw7XNXJn4AOloUXOoVTChMPiAf04HDPmcBBjKKopPSE1f_qlXU8OntfbFR2t_z61TRenCrU-LetrZb380YSECcKfITKIz_mrAAFg=w2400" width= 80 height = 80 style = "padding-left: 10px" >
+                <h1 style = "padding-left: 30px; padding-bottom: 10px; color:rgb(24, 0, 37); font-size: 25px">Hillary Dunkley</h1>
+                <div style = "padding-left: 60px; padding-top: 15px;">
+                    <a href = "https://github.com/hillarydunkley16" target = "_blank">
+                        <i class="fab fa-github"></i></a>
+                    <a href = "https://linkedin.com/hillary-dunkley" target = "_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href = "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hdunkley@smith.edu" target = "_blank">
+                        <i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
             <nav>
-                    <a href="./home.html" style = "position:relative; right: 60px;">Home</a>
-                    <a href="./about.html" style = "position:relative; right: 50px; ">About</a>
-                    <a href="./contact.html" style = "position:relative; right: 40px; ">Contact</a>
+                <a href="./home.html" style = "position:relative; padding-right: 60px">Home</a>
+                <a href="./about.html" style = "position:relative; padding-right: 50px; ">About</a>
+                <a href="./contact.html" style = "position:relative; padding-right: 40px; ">Resume</a>
             </nav>
-            <img src = "https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png" width= 60px height = 50px style = "position:relative; bottom: 40px; left: 40px;">
-            <h2 style = "position:relative; color:rgb(32, 38, 90); left: 130px; bottom: 100px;">Hillary Dunkley</h2>
         </header>
             
-        <main>
+        <main class = "main">
             <section>
             <div>
-                <h1 style = "position:relative; right:70px;">Hi, I'm Hillary!</h1>
-                <a href = "https://github.com/hillarydunkley16" target = "_blank">
-                    <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png" width= 60px height = 50px style = "position:relative; left: 50px; bottom: 40px;">
-                </a>
-                <a href = "linkedin.com/hillary-dunkley" target = "_blank">
-                    <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png" width= 60px height = 50px style = "position:relative; left: 120px; bottom: 40px;">
-                </a>
-                <a href = "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hdunkley@smith.edu" target = "_blank">
-                    <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png" width= 60px height = 50px style = "position:relative; left: 190px; bottom: 40px;">
-                </a>
-                <h2 style = "position:relative; left:20px;">I'm a Smith College student, musician and programmer.</h2>
+                <h1>Hi, I'm Hillary!</h1>
+                <h2>I'm a Smith College student, a musician and a programmer.</h2>
+                
                 
             </div>
                 
             <div>
-                <img src = "https://production-next-images-cdn.thumbtack.com/i/416786180102610957/width/2200.webp" width = 400 height = 400 style = "position:relative; left:150px; top:50px;" >
-                
+                <img src = "https://production-next-images-cdn.thumbtack.com/i/416786180102610957/width/2200.webp" width = 400 height = 400 >
             </div>
             </section>
-        <br></br:>
-        <h2 style = "position:relative; left: 20px; bottom: 20px;">Scroll down to learn about me!</h2>
+        
+        <a href = "#about-me"><h2>Scroll down to learn about me and my work!</h2></a>
         <br><br>
-        <section class = "about-me">
-            <p style = "position:relative; left: 10px; color: #eddef7; text-align: left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class = "about-me" id = "about-me">
+            <p style = "padding: 10px; color: #eddef7; font-size: 20px;">I am a first-year student at Smith College studying Computer Science and Music. I first learned about coding when I was fifteen years old, when my older sister introduced me to it. I enjoy the collaborative nature of coding, and how I can express my creativity through technology. As a violinist and singer, I am especially interested in the intersection of technology and the arts. 
+            <br><br><br><br> <b>Click on the button below to take a look at some of my projects.</b></p>
+            <img src = "https://lh3.googleusercontent.com/ciPBulFSTZQXJU7z9LzUDDtE5qEL9Eoj_7a9K9yQ8lwufgJJk17XV7OSUAnZ4HkpApWDltgrW13g8mHAD0_U_ssE1HWDrMT0WOpdAbgjtVMePHA0sjVo8PBS0g6WgJW3fO-geFB9fA=w2400" style = "padding: 15px;">
         </section>
         </div>
         <br><br>
-        <button type="button" class="collapsible" style = "position:relative;">My projects</button>
-        <div class = "content"style = "position:relative; left:20px;">
-            <p>In my first semester of my first year at Smith, I took an Introduction to Computer Science class. In this class, I coded in Python on Replit, and created a lot of fun programs. <br><br> Here are some of them:</p>
-            <h2><u>Cash Withdrawal</u></h2>
+        <button type="button" class="collapsible" id = "my-projects" style = "position:relative;">My projects</button>
+        <div class = "content">
+            <p>In my first semester of my first year at Smith, I took an Introduction to Computer Science class. In this class, I coded in Python on Replit, and created a lot of fun programs. <br><br> <strong>Here are some of them:</strong></p>
+            <a href= "https://replit.com/@HillaryDunkley/Cash-Withdrawal#main.py" target= "_blank"><h2><u>Cash Withdrawal</u></h2></a>
             <p>This was one of the first asssignements I did in class. In this program, the user is asked to enter a cash amount, and then gives the user how many $20s, $10s, $5s and $1s the amount goes into. This project helped me learn the basics of Python, such as the input, int, and print function.</p>
-            <a href= "https://replit.com/@HillaryDunkley/Cash-Withdrawal#main.py" target= "_blank" style = "font-size: 15px;">Link to the Repl</a><br>
-            <img src= "Cash_withdrawal_output" alt= "the output of my code">
-            <h2><u>Pig Latin Translator</u></h2>
+            <img src = "https://lh3.googleusercontent.com/_-C8wytOjmn5JtlBpk2DMwjRvvW1-LYX5U6egTnCH7hBkm9sIKhgPFFB9Z7mv3xPuK2359DQVRcbLdP2Yde1UHjI2BlPa8eI24WLaTq4Fcy1OibJf_JAW6PHhpyLBNCKGyIOptjzIA=w2400" width = 600px height = 600px>
+            <img src = "https://lh3.googleusercontent.com/CdjRsGn_a7fv_lrwVx2kGp3wSpW2CeFxYA_BG-Dk-MGCzCyncEexlVf6iUV7p4WEHbD2GfgRsGj_sn9T6BGKr7_UeAXvvbnBL8zlv6BF_oPYC0P9SPxPBKvwXVdohoiWqSVbLkvP0w=w2400" width = 600px height = 600px>
+            
+            <a href = "https://replit.com/@HillaryDunkley/Pig-Latin-Translator-1#main.py" target= "_blank"><h2><u>Pig Latin Translator</u></h2></a>
             <p>For this assignment, the program asks the user for a word, which is then translated into Pig Latin. This assignment was good practice in the use of lists, slices and if-statements.</p>
-            <a href = "https://replit.com/@HillaryDunkley/Pig-Latin-Translator-1#main.py" target= "_blank" style = "font-size: 15px;">Link to the Repl</a><br>
-            <h2><u>Calculator</u></h2>
+            
+            <img src = "https://lh3.googleusercontent.com/NR7QanboWHniSstDaMqNacHj5Yh4myv_S9sNKbWMGiQkc66hPZDcnqoFfSyZC3qwWAKfkC1hX-ucwhs9mfwMWbajHQhxPflr5pJFYtzFVfdR6Np5Q57pfTkNPazrVo4F7JCbFAJn6w=w2400" width = 600px height = 600px>
+            <img src = "https://lh3.googleusercontent.com/WXwT-0UsbGryKCEQFvUoPxNzwrGIzEuqzUZ5lW6iYBLMcBgRukcQbS9kmlqVumgD21n9_xlLDLzgZkHkANDc9dKc1Gt8ogknHXsJvk4wpFMdRO8_BtB5_WhjCLuNRuboTQiAYP2ggg=w2400" width = 600px height = 600px>
+            
+            <a href = "https://replit.com/@HillaryDunkley/Calculator#main.py" target = "_blank"><h2><u>Calculator</u></h2></a>
             <p>This assigment was very fun to figure out! It was one of my first times using graphics, which was challenging at first, but eventually I got the hang of it. You can add, subtract, multiply and divide with any two numbers.</p>
-            <a href = "https://replit.com/@HillaryDunkley/Calculator#main.py" target = "_blank" style = "font-size: 15px;">Link to the Repl</a>
-            <h2><u>The Final Project: a Pacman Game</u></h2>
+            <img src = "https://lh3.googleusercontent.com/jzhPV3G3ySCo96ALPf4-nGhQo60YS1NkAlaJi6mpt64ornYoGuT-E5R0yAAra3OPQIc73IZh47XNpM0m7IwnvHDSedyUvraQ1acUkvacwWnAz03Jq0pwVG74XzDHsIu_JNfsxZzP=w2400" width = 600px height = 600px>
+            <img src = "https://lh3.googleusercontent.com/wZ4WU_pCsmEmTkU7oxmsUz_F3JM__DqeDzaoEZHrvedjqKny2ue5vP7hUNd2Esc63eENlA4mUSR9uQjycEVQO8XL6_hbKvP2MhSftX4sqj4rRwmSIivavHjcp1AkTHBmh43JG-1I=w2400" width = 600px height = 600px>
+            <a href = "https://replit.com/@HillaryDunkley/Pacman#main.py" target = "_blank"><h2><u>The Final Project: a Pacman Game</u></h2></a>
+           
             <p>For the final project, my partner (Kate Berklau-Halvor '23) and I created a rudimentary Pacman game, with a maze, a pacman, a ghost, pellets and a score counter. For the ghost, we used AI to determine the ghost's movement based on the location of the pacman on the map. It was very fun to collaborate with another person on a longer term project, and we enjoyed presenting it in class.</p>
-            <a href = "https://replit.com/@HillaryDunkley/Pacman#main.py" target = "_blank" style = "font-size: 15px;">Link to the Final Project</a>
+            <img src = "https://lh3.googleusercontent.com/na5MP99okrHz5m8qxRclsnSQlEGvlK-ASVXNGy9WbMLMfgs2Q1oxMhQ85fWBg5W8777WZbPk9MPlYnF_54lbQ5tsqNtnY4kCV5W3zDlWuZbSGqB_Z0AR6RpNERekqx77hCNiTWHc=w2400" width = 600px height = 600px>
+            <img src = "https://lh3.googleusercontent.com/pBLXWcyoF79US5-epI-T_JW8pjhuGP7HirsuATvuIpYV-cM2BJnRTKpJuhVwUktHHYIitROgXC2Kt4ZkCgDVnjM33RV3bZbX-vre1aThnM7P8kkYgM9-HUfxm--QhVpMYfKtEu-y=w2400" width = 600px height = 600px>
+           
+            
         </div>
-        <p>If you'd like to work with me, or would just like to chat, email me at hdunkley@smith.edu</p>
+        <p>If you'd like to work with me or would just like to chat, email me at hdunkley@smith.edu</p>
 
     </main>
-
-
-
         <script>
+            window.onscroll = function() {myFunction()};
+  
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+  
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            } else {
+             header.classList.remove("sticky");
+                }
+            }
             var coll = document.getElementsByClassName("collapsible");
             var i;
             for (i = 0; i < coll.length; i++) {
@@ -157,8 +205,12 @@
                 } else {
                   content.style.display = "block";
                 }
-              });
-            }
+            });
+            (".front").click(function(){
+            (this).toggleClass("back")  ; 
+            })
+        }
+            
         </script>
 
     </body>
