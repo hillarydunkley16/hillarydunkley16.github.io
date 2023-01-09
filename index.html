@@ -1,109 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            html{
-                scroll-behavior: smooth;
-            }
-            header {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                justify-items: normal;
-            }
-            body {
-                background-color: #e4caf7;
-            } 
-            section {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                justify-self: normal;
-                
-            }
-            i {
-                display: flex;
-                flex-direction: row;
-                color:  #5b015b;
-                padding-left: 10px;
-                padding-right: 130px;
-                padding-top: 0px;
-                padding-bottom: 0px;
-            }
-            section.about-me {
-                background-color: rgb(29, 11, 39);
-                flex : 200px;
-                height: 450px;
-                }
-            header {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                justify-items: normal;
-            }
-            h1 {
-                color: rgb(24, 0, 37);
-                font-size: 60px;
-                font-family: "Trebuchet MS", sans-serif ;
-                text-align: left;
-            }
-            h2 {
-                color: #0C7C59;
-                font-size: 25px;
-                font-family: "Trebuchet MS", sans-serif;
-                text-align: left;
-            }
-            p {
-                color: rgb(92, 2, 92);
-                font-size: 20px;
-                font-family: "Trebuchet MS", sans-serif;
-                text-align: left;
-            }
-            a {
-                color: rgb(24, 0, 37);
-                font-size: 25px;
-                font-family: "Trebuchet MS", sans-serif;
-                text-decoration: none;
-            }
-            .active, a:hover{
-                color:rgb(94, 15, 87)
-            }
-            .collapsible {
-                background-color: rgb(92, 2, 92);
-                color: rgb(255, 233, 251);
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
-            }
-            .active, .collapsible:hover {
-                background-color: rgb(29, 11, 39);
-                color: #0C7C59
-            }
-
-            .content {
-                padding: 0 18px;
-                display: none;
-                overflow: hidden;
-                background-color: rgb(255, 233, 251);
-            }
-            nav{
-                text-align: right;
-                color:rgb(32, 38, 90);
-                font-size: 40px;  
-            }
-            .sticky {
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-            
-            
-             
-        </style>
+        <link rel = "stylesheet", type = "text/css", href = "main.css", media = "screen"/>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -111,11 +9,11 @@
         <script src="https://kit.fontawesome.com/c69731a102.js" crossorigin="anonymous"></script>
       </head>
       <body>
-        <header id = "myHeader">
-            <div style="display: flex; flex-wrap: nowrap;">
+        <header id = "header" class = "myheader">
+            <div>
                 <img src = "https://lh3.googleusercontent.com/cknPnLbodWd1LN9GXNoYRWZ-IIPEMBLNf7ZmS1Kw7XNXJn4AOloUXOoVTChMPiAf04HDPmcBBjKKopPSE1f_qlXU8OntfbFR2t_z61TRenCrU-LetrZb380YSECcKfITKIz_mrAAFg=w2400" width= 80 height = 80 style = "padding-left: 10px" >
-                <h1 style = "padding-left: 30px; padding-bottom: 10px; color:rgb(92, 2, 92); font-size: 25px">Hillary Dunkley</h1>
-                <div style = "padding-left: 60px; padding-top: 15px;">
+                <h1 class = "title">Hillary Dunkley</h1>
+                <div class = "social-media-icons">
                     <a href = "https://github.com/hillarydunkley16" target = "_blank">
                         <i class="fab fa-github"></i></a>
                     <a href = "https://www.linkedin.com/in/hillary-dunkley-85583a1ab/" target = "_blank">
@@ -125,9 +23,9 @@
                 </div>
             </div>
             <nav>
-                <a href="#my-projects" style = "position:relative; padding-right: 60px">Projects</a>
-                <a href="#about-me" style = "position:relative; padding-right: 50px; ">About</a>
-                <a href="/resume.pdf" download style = "position:relative; padding-right: 40px; ">Resume</a>
+                <a href="#my-projects" style = "position:relative; padding: 10px ">Projects</a>
+                <a href="#about-me" style = "position:relative; padding: 10px ">About</a>
+                <a href="/resume.pdf" download style = "position:relative; padding: 10px ">Resume</a>
             </nav>
         </header>
             
@@ -135,8 +33,10 @@
             <section>
             <div>
                 <h1>Hi, I'm Hillary!</h1>
-                <h2>I'm a Smith College student, a musician and a programmer.</h2>
-                <a href = "#about-me"><h2>Scroll down to learn about me and my work!</h2></a>
+                <div id = "container">
+                    <h2 class = "text">I'm a</h2><div id = "text"></div><div id = "cursor"></div>
+                    <a href = "#about-me"><h2>Scroll down to learn about me and my work!</h2></a>
+                </div>
                 
             </div>
                 
@@ -182,37 +82,6 @@
         <p>If you'd like to work with me or would just like to chat, email me at</p> <a href= "mailto:hdunkley@smith.edu" target = "_blank"><p>hdunkley@smith.edu</p></a>
 
     </main>
-        <script>
-            window.onscroll = function() {myFunction()};
-  
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-  
-            function myFunction() {
-            if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            } else {
-             header.classList.remove("sticky");
-                }
-            }
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                  content.style.display = "none";
-                } else {
-                  content.style.display = "block";
-                }
-            });
-            (".front").click(function(){
-            (this).toggleClass("back")  ; 
-            })
-        }
-            
-        </script>
-
+        <script src = 'main.js'></script>
     </body>
 </html>
