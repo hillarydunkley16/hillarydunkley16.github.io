@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hillary Dunkley</title>
-        <script src="https://kit.fontawesome.com/c69731a102.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +16,6 @@
             <header id = "header" class = "myheader">
                 <div class = "flex">
                     <img src = "https://lh3.googleusercontent.com/OXFZ-v7BolgQ4g6Kux-rae3USx2VRnM3aUc54iBlYPnZNEvUorYTjo-sUemzwvJAnTctswmWNXwA9TaAsuHX_1RPg5S8EGb91dHINERMiwYDlqI7RrX_n8xdf4yJt5Uc3X9omZrZ=w2400" id = "logo" width= 80 height = 80>
-                    <!-- <h1 class = "title">Hillary Dunkley</h1> -->
                     <div class = "social-media-icons">
                         <a href = "https://github.com/hillarydunkley16" target = "_blank">
                             <i class="fab fa-github"></i></a>
@@ -29,16 +27,16 @@
                 </div>
                 <nav id = "nav-wrap">
                     <ul id = "nav" class = "nav"> 
-                        <li>
-                            <a href="#my-projects" style = "position:relative; padding: 10px ">Projects</a> 
+                        <li class = "nav">
+                            <a href="#projects" style = "position:relative; padding: 10px ">Projects</a> 
                         </li>
-                        <li>
+                        <li class = "nav">
                             <a href="#about-me" style = "position:relative; padding: 10px ">About</a>
                         </li>
-                        <li>
+                        <li class = "nav">
                             <a href = "#skills">Skills</a>
                         </li>
-                        <li>
+                        <li class = "nav">
                             <a href="/resume.pdf" download style = "position:relative; padding: 10px ">Resume</a>
                         </li>
                     </ul>
@@ -46,95 +44,146 @@
             </header>
                 <h1 id = "myName">Hillary Dunkley</h1>
                 <h2 id = "effect">I'm a <span id = "typed-text"></span><span id="cursor">&nbsp;</span></h2> 
-                <a href = "#about-me"><h2 style = "text-align: center;">Scroll down to learn about me and my work!</h2></a>  
+                <h2 style = "text-align: center;">Scroll down to learn about me and my work!</h2>  
             </div>
             <section class = "about-me-section">
                 <div class = "about-me-flex-block">
                     <div class = "block-wrap1"> 
-                        <h2 class = "about-me">About Me:</h2>
-                        <p class = "about-me">I am a student at Smith College in Massachusetts, double majoring in Computer Science and Music. When I attended my first hackathon at 15 years old I became fascinated by coding. I enjoy collaborating with others to complete a project and expressing my creativity through technology. In March 2020, I created a mutual aid website in collaboration with my older sister, helping vulnerable neighbors in my community. As a violinist and a singer, I am especially interested in the intersection of technology and the arts. I started my own business in my freshman year of high school teaching violin, viola and singing lessons to adults and children. During the past two years, this business has shifted entirely online. Adapting and adjusting using new technology while continuing to meet my students’ needs has been both challenging and rewarding. My hobbies are composing and performing music. In my free time I enjoy discovering new music artists, reading classic literature and binge watching my guilty pleasure shows. </p>
-                        <!-- <br><br><br><br> <b>Click on the button below to take a look at some of my projects.</b></p> -->
-                        <!-- <img src = "https://lh3.googleusercontent.com/bKG2WpI_evQN4003lBxw8gF0lWyMG5ekPpT3r5UdvLywNj_zJg9fq-aQ7Oov1WVFBl1XztB2bICR4mr16oVhxkasUUAeP-0G8Nv2Xnsaz4IB5bQ4DjH8IHYeRm2wsh-sHMOgF-eE=w2400" width = 300 height = 400 style = "float: right"> -->
+                        <h1 class = "about-me">About Me:</h1>
+                        <p class = "about-me">I am currently a sophomore at Smith College studying Computer Science and Music. I have a passion for the intersection of computer science and the arts, and I enjoy creating new and exciting tools for the arts through programming. <br><br>I am seeking a software engineering internship in a company with a strong mission and a passion for helping people through technology. <br><br>My interests other than coding include music, coffee, smoothies, the Italian language, and my cat Strudel.</p>
                     </div> 
                 </div>
             </section> 
             <section id = "skills">
-                <h1 style = "padding-left: 15px;">Skills</h1>
-                <!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas ducimus inventore, accusamus iste labore dolore possimus repudiandae, ratione consequatur dolores, neque officiis nihil omnis reprehenderit. Voluptatibus libero reprehenderit similique!</h2> -->
+                <h1>Skills</h1>
                 <div id = "gridSkills" class = "flex">
                     <div class = "row1">
                         <img src = "https://lh3.googleusercontent.com/NCpSz2MsEeWNTYf3DkhzX62IjuSmzI9sh0yPH4pJgU0T1BMEATuc-4_pXdo0VbiF8deR2zxpgiE8iaUDxO7ZLCrO25K8KsuiIc0XSH9iHcDUA9y2keuxMhsH8r-zOoGcJ3M_89Iy=s50-p-k" class = "icon">
                         <h3>Python</h3>
-                        <h4 style = "text-align: center;">1 year</h4>
-                        <p class = "skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse laudantium ipsam omnis dolorem qui dolores, aperiam nam atque deleniti quisquam corporis explicabo sit accusamus sed minima eos repellendus porro.<br>
-                        </p>
+                        <ul>
+                            <a href = "#projects"class = "skills"><li>Pac-Man Game</li></a>
+                            <a href = "#projects"class = "skills"><li>Sorting Algorithm Visualizer</li></a>
+                        </ul>
+                            
                     </div>
                     <div class = "row1">
                         <img src = "https://lh3.googleusercontent.com/ANBn-uicj92husDeo4hJjZAQbuB1M72lT1wa22PjN1hzv8pcr0cg6d7dkuHUCpNMzbuGBFSoWP2vXcJUfAleYe9_Q_hAoCrxIkle_XDHF28-zyaA-jgjrGmdPXIFEUuIUxCcHk3g=s50-p-k" class = "icon">
                         <h3>Java</h3>
-                        <h4>6 months</h4>
-                        <p class = "skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illum omnis ex. Quidem ab amet fugit cum optio consectetur laudantium eos nam repellendus a maiores, vel ex omnis, cumque ipsam.
-                         </p>
-                    </div>
-                    <div class = "row2">
-                        <img src = "https://lh3.googleusercontent.com/n-SYAbb6r50djYTu98raVupEJn5K8Z1aV8dkdHLcWgL3oy9J5iIZrD2P8S260Rnu2eOjrdNJ3-psPQHKvsv5yPQZ5pNIDL3G6nA0Lvn-gh7LJCJTnkQTk_7qYTqFh1LgHhFrKcpu=s50-p-k" class = "icon">
-                        <h3>Ruby</h3>
-                        <h4>1 year</h4>
-                        <p class = "skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolore repellat. Laudantium adipisci eos provident debitis exercitationem in, molestias qui aspernatur ad dolorum! Repudiandae ipsa exercitationem numquam! Dolorum, architecto vitae.</p>
+                        <ul class = "skills">
+                            <a href = "#projects"class = "skills"><li>Namor's Revenge</li></a>
+                            <a href = "#projects"class = "skills"><li>Criminal Justice</li></a>
+                            <a href = "#projects"class = "skills"><li>Trash Collector</li></a>
+                        </ul>
                     </div>
                     <div class = "row2">
                         <img src = "https://lh3.googleusercontent.com/7WCPbjHc03PtbKMY-waBjKXFpx8dTISheAJ4t4ujfQY0sXWVb6lliL_NOZp0IlhmoqC4h__nPFjQynfaVAMSg5WYdTrVOmRqyR7oZwzmoOPhGD9SuTf1-sEhQizIljfHzIf8o1dr=s48-p-k" class = "icon">
                         <h3>Ruby on Rails</h3>
-                        <h4>1 year</h4>
-                        <p class = "skills">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit inventore libero minus eligendi, aliquam omnis praesentium facere nemo. Illum blanditiis soluta velit numquam quidem dolorum fuga assumenda vel culpa quisquam.</p>
+                        <ul class = "skills">
+                            <a href = "#projects"class = "skills"><li>What's for Dinner?</li></a>
+                        </ul>
                     </div>
                     <div class = "row3">
                         <img src = "https://lh3.googleusercontent.com/L-lvkG41TiESKIaMgYUWayUaBD1A3zEO6MSsjTvppsShqPnT7vfVdnpRWZ0xfiAAkFS4kenfM7q_PSZFyymR6OVaM0KYXa50W8ZVL2m_MY84jBd7mNimXFpZejY2BUT07SB8ut9m=s50-p-k"class = "icon">
-                        <h3>Javascript</h3>
-                        <h4>2 years</h4>
-                        <p class = "skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima totam sed earum, exercitationem asperiores facilis inventore saepe, numquam officiis non? Tenetur eligendi impedit veritatis officiis dolore consequuntur! Beatae, ea!</p>
-                    </div>
-                    <div class = "row3">
-                        <img src = "https://lh3.googleusercontent.com/vb0Qxo2pdKisjcRxSvoGwhyxyP40bFAq0it3LXVeZlXWp1EhV6fPwFr1oZShvMJei8J6-nbKwMbvH2PsSbT63PDIYJ2SOcPT4vlO2vHSbx-DihgKHRrOKz2kvh4759-tAaGwyVOT=s50-p-k"class = "icon">
-                        <h3>Swift</h3>
-                        <h4>3 months</h4>
-                        <p class = "skills">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati distinctio dolores dolorem reprehenderit nostrum voluptates laudantium libero, odit ea similique unde modi quaerat, odio recusandae nemo, consequuntur dignissimos pariatur molestias.</p>
-                    </div>
-                    <div class ="row4">
                         <img src = "https://lh3.googleusercontent.com/znVqhKpl9FqwEOgHK-6iLQ3BqvbaO18C--_1wutPRjNJ3ONyAhCqNxsAeHD2xsxYueafj2qSbn6zqk0lef8S24jCpPyCiJhhBohrqjh5YoyOX3LaS1CQYTtL9Png80YNwGR6n1Qn=s48-p-k"class = "icon">
-                        <h3>HTML</h3>
-                        <h4>5 years</h4>
-                        <p class = "skills">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus recusandae laudantium dolor asperiores placeat aliquam deleniti, libero rerum harum esse magni sed quod nulla excepturi quia ipsum eaque nisi? Iusto.</p>
-                    </div>
-                    <div class = "row4">
                         <img src = "https://lh3.googleusercontent.com/d_vExF0e2V1hU3Cvn4lCugacSMd0Sk3ldBZs93cyVyL9shiJNVKgFPf1fiiFvNwkkZRBKWqfx_9o-kl5HehrSFg2toRT2KRdN48ENfE-MgWF3rIek4-YdLPbM5hKznpj-JMIRDOy=s60-p-k"class = "icon">
-                        <h3>CSS</h3>
-                        <h4>5 years</h4>
-                        <p class = "skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis soluta consectetur omnis. Eaque aut earum molestiae ex error sapiente odio repudiandae aperiam! Sequi libero unde nisi hic minima deleniti?</p>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <a href = "#projects"class = "skills"><li>wellBE</li></a>
+                            <a href = "#projects"class = "skills"><li>Pita Pockets</li></a>
+                            <a href = "#projects"class = "skills"><li>What's for Dinner?</li></a>
+                        </ul>
                     </div>
+                    
                 </div>
             </section>
         <!-- <button type="button" class="collapsible" id = "my-projects"><strong>My projects</strong></button> -->
             <section id = "projects">
                 <!--projects: 
-                java text adventure game
-                python sorting alg visualizer
-                python pac man game
-                java analysis of software     
+                1. java text adventure game
+                 what's for dinner?
+                2. python sorting alg visualizer
+                3. python pac man game
+                4. java analysis of software
+                5. WellBE
+                6. Pita Pockets    
                 -->
-                <a class = "portfolio-item" data-toggle = "modal"><span class = "caption">
-                    <span class = "caption-content">
-                        <h4>Text-based horror adventure game</h4>
-                    </span>
-                </span></a>
+                <h1>Projects</h1>
+                <div id = "gridProjects" class = "flex">
+                    <div class = "project-box">
+                        <h3 class = "project">Namor's Revenge</h3>
+                        <p class = "project">A text-based horror adventure game created with Java, using data structures such as graphs and hash sets. Features include multiple endings, a map that the user can freely move through, an inventory, and typed commands.</p>
+                        <a href = "https://github.com/hillarydunkley16/TextAdventure" target="_blank">
+                            <div class = "button">
+                                <i class="fab fa-github"></i>
+                                <p class = "button">Check out the project on GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "project-box">
+                        <h3 class = "project">wellBE</h3>
+                        <p class = "project">A project completed at the Hack(h)er 413 Hackathon in Amherst, MA. wellBe is a website that allows users to log their food, deemphasizing calorie counting and emphasizing macro nutrients. Additionally allows users to log their activities and symptoms/feelings. This project won the Panera Hack for a Healthier Happier World Prize. </p><br><br>
+                        <a href = "https://github.com/crowelladrianna/hackher2023" target="_blank">
+                            <div class = "button">
+                                <i class="fab fa-github"></i>
+                                <p class = "button">Check out the project on GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "project-box">
+                        <h3 class = "project">What's for Dinner?</h3>
+                        <p class = "project">A Random Recipe Generator that creates a recipe based on inputs given by the user. Created with Ruby on Rails, Ruby, HTML, CSS and Javascript</p><br><br>
+                        <a href = "https://github.com/hillarydunkley16/whats-for-dinner" target="_blank">
+                            <div class = "button">
+                                <i class="fab fa-github"></i>
+                                <p class = "button">Check out the project on GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "project-box">
+                        <h3 class = "project">Criminal Justice - Dissecting Machine Bias</h3>
+                        <p class = "project">
+                            A supplemental analysis to <a class = "project" href = "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank">ProPublica's analysis of software by Northepointe</a> to compare the descriptions of recidivism crimes to filter by
+                            severity, as well as an analysis of recidivism by race and gender
+                            Gained fluency with Java and coding with large data sets, as well as an understanding of the effect of human bias in
+                            software, and the real-world consequences of bias.</p>
+                            <a href = "https://github.com/hillarydunkley16/ProPublica-Crime-Stats-Analysis" target="_blank">
+                                <div class = "button">
+                                    <i class="fab fa-github"></i>
+                                    <p class = "button">Check out the project on GitHub</p>
+                                </div>
+                            </a>
+                    </div>
+                    <div class = "project-box">
+                        <h3 class = "project">Pac-Man Game</h3>
+                        <p class = "project">A recreation of famous Pac-Man game with a game map, Pac-Man, and ghosts, whose movements were dictated by artificial intelligence.</p>
+                        <a href = "https://github.com/hillarydunkley16/PacManGame" target="_blank">
+                        <div class = "button">
+                            <i class="fab fa-github"></i>
+                            <p class = "button">Check out the project on GitHub</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "project-box">
+                        <h3 class = "project">Sorting Algorithm Visualizer</h3>
+                        <p class = "project">A sorting algorithm visualizer that allows users to view the merge sort, insertion sort, selection sort and bubble sort algorithm using bars of varying lengths.</p>
+                        <a href = "https://github.com/hillarydunkley16/TextAdventure" target="_blank">
+                            <div class = "button">
+                                <i class="fab fa-github"></i>
+                                <p class = "button">Check out the project on GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
             </section>
             <footer>
-                <p>If you'd like to work with me or would just like to chat, email me at</p> <a href= "mailto:hdunkley@smith.edu" target = "_blank"><p>hdunkley@smith.edu</p></a>
+                <!-- <p>If you'd like to work with me or would just like to chat, email me at</p> <a href= "mailto:hdunkley@smith.edu" target = "_blank"><p>hdunkley@smith.edu</p></a> -->
             </footer>
 
     </main>
         <script src = 'main.js'></script>
         <script src = "typing.js"></script>
+        <script src="https://kit.fontawesome.com/c69731a102.js" crossorigin="anonymous"></script>
         <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap'); </style>
     </body>
 </html>

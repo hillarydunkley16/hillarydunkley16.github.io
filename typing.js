@@ -2,9 +2,9 @@ const typedTextSpan = document.getElementById("typed-text");
 const cursorSpan = document.getElementById("cursor");
 
 const textArray = ["student", "musician", "programmer"];
-const typingDelay = 250;
-const erasingDelay = 200;
-const newTextDelay = 800; // Delay between current and next text
+const typingDelay = 100;
+const erasingDelay = 350;
+const newTextDelay = 400; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
