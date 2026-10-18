@@ -1,195 +1,199 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel = "stylesheet", type = "text/css", href = "main.css", media = "screen"/>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hillary Dunkley</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-      </head>
-      <body>
-        <main>
-            <div id = "intro">
-            <header id = "header" class = "myheader">
-                <div class = "flex">
-                    <img src = "https://lh3.googleusercontent.com/OXFZ-v7BolgQ4g6Kux-rae3USx2VRnM3aUc54iBlYPnZNEvUorYTjo-sUemzwvJAnTctswmWNXwA9TaAsuHX_1RPg5S8EGb91dHINERMiwYDlqI7RrX_n8xdf4yJt5Uc3X9omZrZ=w2400" id = "logo" width= 80 height = 80>
-                    <div class = "social-media-icons">
-                        <a href = "https://github.com/hillarydunkley16" target = "_blank">
-                            <i class="fab fa-github"></i></a>
-                        <a href = "https://www.linkedin.com/in/hillary-dunkley-85583a1ab/" target = "_blank">
-                            <i class="fab fa-linkedin"></i></a>
-                        <a href = "mailto:hdunkley@smith.edu" target = "_blank">
-                            <i class="fas fa-envelope"></i></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillary Dunkley – AI Engineer</title>
+    <meta name="description" content="Hillary Dunkley is an AI engineer in New York City who builds LLM systems, rules engines and agent workflows in Python and Go.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="container nav-bar">
+        <a href="#top" class="wordmark" aria-label="Hillary Dunkley, back to top"><img src="assets/signature.png" alt="" width="101" height="58"></a>
+        <nav class="nav-links" aria-label="Main">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="Hillary-Dunkley-Resume.pdf" target="_blank" rel="noopener" class="pill-dark">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top" class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <p class="hero-name">Hillary Dunkley</p>
+                    <h1 class="hero-title">
+                        <span class="line">I'm an AI engineer who</span>
+                        <span class="line typed-line"><span id="typed-text">builds LLM systems</span><span class="caret" aria-hidden="true"></span></span>
+                    </h1>
+                    <p class="hero-sub">LLM pipelines, rules engines and agent workflows in Python and Go. Smith College, CS and Italian Studies.</p>
+                    <div class="button-row">
+                        <a href="#projects" class="btn btn-butter">See my work</a>
+                        <a href="mailto:hvgdunkley@gmail.com" class="btn btn-outline-light">hvgdunkley@gmail.com</a>
                     </div>
                 </div>
-                <nav id = "nav-wrap">
-                    <ul id = "nav" class = "nav"> 
-                        <li class = "nav">
-                            <a href="#projects" style = "position:relative; padding: 10px ">Projects</a> 
-                        </li>
-                        <li class = "nav">
-                            <a href="#about-me" style = "position:relative; padding: 10px ">About</a>
-                        </li>
-                        <li class = "nav">
-                            <a href = "#skills">Skills</a>
-                        </li>
-                        <li class = "nav">
-                            <a href="/Hillary Dunkley Resume 2023.pdf" target = "_blank">Resume</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-                <h1 id = "myName">Hillary Dunkley</h1>
-                <h2 id = "effect">I'm a <span id = "typed-text"></span><span id="cursor">&nbsp;</span></h2> 
-                <h2 style = "text-align: center;">Scroll down to learn about me and my work!</h2>  
+                <div class="hero-photo">
+                    <img src="assets/hillary.jpg" alt="Portrait of Hillary Dunkley" width="340" height="425">
+                    <div class="proof">
+                        <strong>Human + AI QA</strong>
+                        <span>workflows that treat model output as one input alongside human review</span>
+                    </div>
+                </div>
             </div>
-            <section class = "about-me-section">
-                <div class = "about-me-flex-block">
-                    <div class = "block-wrap1"> 
-                        <h1 class = "about-me">About Me:</h1>
-                        <p class = "about-me">I am currently a sophomore at Smith College studying Computer Science and Music. I have a passion for the intersection of computer science and the arts, and I enjoy creating new and exciting tools for the arts through programming. <br><br>I am seeking a software engineering internship in a company with a strong mission and a passion for helping people through technology. <br><br>My interests other than coding include music, coffee, smoothies, the Italian language, and my cat Strudel.</p>
-                    </div> 
+        </section>
+
+        <section id="about" class="container section section-first">
+            <div class="about">
+                <div class="about-text">
+                    <p class="eyebrow">01 / About</p>
+                    <h2>LLM systems, rules engines and data pipelines</h2>
+                    <p>I'm an AI engineer who designs agent workflows and builds LLM systems, evaluation pipelines and data tooling in Python. At Notable Systems I built a coverage-prediction engine that automated first-pass clinical review, so clinicians could focus on the cases that needed their judgment.</p>
+                    <p>I'm a Smith College graduate in Computer Science and Italian Studies, looking for AI/LLM engineering roles in New York City.</p>
                 </div>
-            </section> 
-            <section id = "skills">
-                <h1>Skills</h1>
-                <div id = "gridSkills" class = "flex">
-                    <div class = "row1">
-                        <!-- <img src = "https://lh3.googleusercontent.com/NCpSz2MsEeWNTYf3DkhzX62IjuSmzI9sh0yPH4pJgU0T1BMEATuc-4_pXdo0VbiF8deR2zxpgiE8iaUDxO7ZLCrO25K8KsuiIc0XSH9iHcDUA9y2keuxMhsH8r-zOoGcJ3M_89Iy=s50-p-k" class = "icon"> -->
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Python</h3>
-                        <ul>
-                            <a href = "#projects"class = "skills"><li>Pac-Man Game</li></a>
-                            <a href = "#projects"class = "skills"><li>Sorting Algorithm Visualizer</li></a>
-                        </ul>
-                            
-                    </div>
-                    <div class = "row1">
-                        <!-- <img src = "https://lh3.googleusercontent.com/ANBn-uicj92husDeo4hJjZAQbuB1M72lT1wa22PjN1hzv8pcr0cg6d7dkuHUCpNMzbuGBFSoWP2vXcJUfAleYe9_Q_hAoCrxIkle_XDHF28-zyaA-jgjrGmdPXIFEUuIUxCcHk3g=s50-p-k" class = "icon"> -->
-                        <i class="fa-brands fa-java"></i>
-                        <h3>Java</h3>
-                        <ul class = "skills">
-                            <a href = "#projects"class = "skills"><li>Namor's Revenge</li></a>
-                            <a href = "#projects"class = "skills"><li>Criminal Justice</li></a>
-                            <a href = "#projects"class = "skills"><li>Trash Collector</li></a>
-                        </ul>
-                    </div>
-                    <div class = "row2">
-                        <!-- <img src = "https://lh3.googleusercontent.com/7WCPbjHc03PtbKMY-waBjKXFpx8dTISheAJ4t4ujfQY0sXWVb6lliL_NOZp0IlhmoqC4h__nPFjQynfaVAMSg5WYdTrVOmRqyR7oZwzmoOPhGD9SuTf1-sEhQizIljfHzIf8o1dr=s48-p-k" class = "icon"> -->
-                        <i class="fa-light fa-gem"></i>
-                        <h3>Ruby on Rails</h3>
-                        <ul class = "skills">
-                            <a href = "#projects"class = "skills"><li>What's for Dinner?</li></a>
-                        </ul>
-                    </div>
-                    <div class = "row3">
-                        <!-- <img src = "https://lh3.googleusercontent.com/L-lvkG41TiESKIaMgYUWayUaBD1A3zEO6MSsjTvppsShqPnT7vfVdnpRWZ0xfiAAkFS4kenfM7q_PSZFyymR6OVaM0KYXa50W8ZVL2m_MY84jBd7mNimXFpZejY2BUT07SB8ut9m=s50-p-k"class = "icon"> -->
-                        <!-- <img src = "https://lh3.googleusercontent.com/znVqhKpl9FqwEOgHK-6iLQ3BqvbaO18C--_1wutPRjNJ3ONyAhCqNxsAeHD2xsxYueafj2qSbn6zqk0lef8S24jCpPyCiJhhBohrqjh5YoyOX3LaS1CQYTtL9Png80YNwGR6n1Qn=s48-p-k"class = "icon"> -->
-                        <!-- <img src = "https://lh3.googleusercontent.com/d_vExF0e2V1hU3Cvn4lCugacSMd0Sk3ldBZs93cyVyL9shiJNVKgFPf1fiiFvNwkkZRBKWqfx_9o-kl5HehrSFg2toRT2KRdN48ENfE-MgWF3rIek4-YdLPbM5hKznpj-JMIRDOy=s60-p-k"class = "icon"> -->
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-square-js"></i>
-                        <h3>Frontend</h3>
-                        <ul>
-                            <a href = "#projects"class = "skills"><li>wellBE</li></a>
-                            <a href = "#projects"class = "skills"><li>Pita Pockets</li></a>
-                            <a href = "#projects"class = "skills"><li>What's for Dinner?</li></a>
-                        </ul>
-                    </div>
-                    
+                <div class="sign-card">
+                    <p class="mono-note">Nice to meet you,</p>
+                    <img src="assets/signature.png" alt="Hillary Dunkley's signature" width="240" height="136">
                 </div>
-            </section>
-        <!-- <button type="button" class="collapsible" id = "my-projects"><strong>My projects</strong></button> -->
-            <section id = "projects">
-                <!--projects: 
-                1. java text adventure game
-                 what's for dinner?
-                2. python sorting alg visualizer
-                3. python pac man game
-                4. java analysis of software
-                5. WellBE
-                6. Pita Pockets    
-                -->
-                <h1>Projects</h1>
-                <div id = "gridProjects" class = "flex">
-                    <div class = "project-box">
-                        <h3 class = "project">Namor's Revenge</h3>
-                        <p class = "project">A text-based horror adventure game created with Java, using data structures such as graphs and hash sets. Features include multiple endings, a map that the user can freely move through, an inventory, and typed commands.</p>
-                        <a href = "https://github.com/hillarydunkley16/TextAdventure" target="_blank">
-                            <div class = "button">
-                                <i class="fab fa-github"></i>
-                                <p class = "button">Check out the project on GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class = "project-box">
-                        <h3 class = "project">wellBE</h3>
-                        <p class = "project">A project completed at the Hack(h)er 413 Hackathon in Amherst, MA. wellBe is a website that allows users to log their food, deemphasizing calorie counting and emphasizing macro nutrients. Additionally allows users to log their activities and symptoms/feelings. This project won the Panera Hack for a Healthier Happier World Prize. </p><br><br>
-                        <a href = "https://github.com/crowelladrianna/hackher2023" target="_blank">
-                            <div class = "button">
-                                <i class="fab fa-github"></i>
-                                <p class = "button">Check out the project on GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class = "project-box">
-                        <h3 class = "project">What's for Dinner?</h3>
-                        <p class = "project">A Random Recipe Generator that creates a recipe based on inputs given by the user. Created with Ruby on Rails, Ruby, HTML, CSS and Javascript</p><br><br>
-                        <a href = "https://github.com/hillarydunkley16/whats-for-dinner" target="_blank">
-                            <div class = "button">
-                                <i class="fab fa-github"></i>
-                                <p class = "button">Check out the project on GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class = "project-box">
-                        <h3 class = "project">Criminal Justice - Dissecting Machine Bias</h3>
-                        <p class = "project">
-                            A supplemental analysis to <a class = "project" href = "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank">ProPublica's analysis of software by Northepointe</a> to compare the descriptions of recidivism crimes to filter by
-                            severity, as well as an analysis of recidivism by race and gender
-                            Gained fluency with Java and coding with large data sets, as well as an understanding of the effect of human bias in
-                            software, and the real-world consequences of bias.</p>
-                            <a href = "https://github.com/hillarydunkley16/ProPublica-Crime-Stats-Analysis" target="_blank">
-                                <div class = "button">
-                                    <i class="fab fa-github"></i>
-                                    <p class = "button">Check out the project on GitHub</p>
-                                </div>
-                            </a>
-                    </div>
-                    <div class = "project-box">
-                        <h3 class = "project">Pac-Man Game</h3>
-                        <p class = "project">A recreation of famous Pac-Man game with a game map, Pac-Man, and ghosts, whose movements were dictated by artificial intelligence.</p>
-                        <a href = "https://github.com/hillarydunkley16/PacManGame" target="_blank">
-                        <div class = "button">
-                            <i class="fab fa-github"></i>
-                            <p class = "button">Check out the project on GitHub</p>
+            </div>
+        </section>
+
+        <section id="experience" class="container section ruled">
+            <div class="experience">
+                <div class="section-head">
+                    <p class="eyebrow">02 / Experience</p>
+                    <h2>Where I've worked</h2>
+                </div>
+                <div class="jobs">
+                    <article class="job">
+                        <p class="job-dates">Aug 2026 – Now</p>
+                        <div class="job-body">
+                            <h3>AI Adoption Consultant</h3>
+                            <p class="job-org">Freelance</p>
+                            <p>Designed an AI-assisted workflow to replace a manual, expert-driven task, with a QA framework that treats model output as one input alongside human review.</p>
                         </div>
-                    </a>
-                    </div>
-                    <div class = "project-box">
-                        <h3 class = "project">Sorting Algorithm Visualizer</h3>
-                        <p class = "project">A sorting algorithm visualizer that allows users to view the merge sort, insertion sort, selection sort and bubble sort algorithm using bars of varying lengths.</p>
-                        <a href = "https://github.com/hillarydunkley16/TextAdventure" target="_blank">
-                            <div class = "button">
-                                <i class="fab fa-github"></i>
-                                <p class = "button">Check out the project on GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-
+                    </article>
+                    <article class="job">
+                        <p class="job-dates">Jun – Oct 2025</p>
+                        <div class="job-body">
+                            <h3>Business Rules Developer</h3>
+                            <p class="job-org">Notable Systems</p>
+                            <p>Engineered a rules engine with LLMs and Go that predicts insurance coverage approval at near-100% accuracy, cutting manual clinical review time.</p>
+                        </div>
+                    </article>
+                    <article class="job">
+                        <p class="job-dates">May 2024 – Sep 2025</p>
+                        <div class="job-body">
+                            <h3>Fellow</h3>
+                            <p class="job-org">Break Through Tech AI, Cornell Tech</p>
+                            <p>Selected from 3000+ applicants for a 12-month program with machine learning coursework taught by MIT faculty.</p>
+                        </div>
+                    </article>
+                    <article class="job">
+                        <p class="job-dates">Jun – Sep 2024</p>
+                        <div class="job-body">
+                            <h3>Software Engineer Intern</h3>
+                            <p class="job-org">L.L.Bean</p>
+                            <p>Replaced a deprecated QA system with SQL Server and PowerApps, with full handoff docs. Led 10 interns on an equipment rental proposal.</p>
+                        </div>
+                    </article>
+                    <article class="job">
+                        <p class="job-dates">Jun – Aug 2023</p>
+                        <div class="job-body">
+                            <h3>Project Management Intern</h3>
+                            <p class="job-org">Panera Bread</p>
+                            <p>Built a React and PostgreSQL app for an IoT camera-vision system. Won the Margin Stewardship category at the Innovate Hackathon.</p>
+                        </div>
+                    </article>
                 </div>
-            </section>
-            <footer>
-                <!-- <p>If you'd like to work with me or would just like to chat, email me at</p> <a href= "mailto:hdunkley@smith.edu" target = "_blank"><p>hdunkley@smith.edu</p></a> -->
-            </footer>
+            </div>
+        </section>
 
+        <section id="skills" class="container section ruled">
+            <p class="eyebrow">03 / Skills</p>
+            <h2>What I work with</h2>
+            <div class="skills-grid">
+                <div class="card skill skill-forest">
+                    <h3>AI and LLM</h3>
+                    <p>Agent workflows, LangGraph, rules engines, model benchmarking, QA for AI output</p>
+                </div>
+                <div class="card skill skill-sky">
+                    <h3>Languages</h3>
+                    <p>Python, Go, JavaScript, SQL, Java</p>
+                </div>
+                <div class="card skill skill-butter">
+                    <h3>Frontend</h3>
+                    <p>React, HTML, CSS, Figma, WordPress</p>
+                </div>
+                <div class="card skill skill-blush">
+                    <h3>Data</h3>
+                    <p>PostgreSQL, SQL Server, data transformation, pipelines</p>
+                </div>
+            </div>
+            <p class="mono-note certs">Certifications: LangGraph (Python) · Claude Code 101 · Fundamentals of Agents · React.js Essential Training · React.js: Building an Interface</p>
+        </section>
+
+        <section id="projects" class="container section ruled">
+            <p class="eyebrow">04 / Projects</p>
+            <h2>Things I've built</h2>
+            <div class="projects-grid">
+                <a class="card project" href="https://github.com/hillarydunkley16/class-management-agent" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>LangGraph agent</span><span class="accent">GitHub ↗</span></p>
+                    <h3>Teaching Assistant Agent</h3>
+                    <p>Tracks lesson progress across 10 classes, with Google Sheets as the source of truth and bilingual Italian/English email parsing that validates input before writing.</p>
+                </a>
+                <a class="card project" href="https://github.com/hillarydunkley16/shopify-liquid-implementation-qa" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>RAG + QA agent</span><span class="accent">GitHub ↗</span></p>
+                    <h3>Shopify Liquid Implementation &amp; QA</h3>
+                    <p>Retrieves Shopify docs, generates Liquid code, then has a separate QA agent check it. Built with LlamaIndex, LangGraph and Streamlit.</p>
+                </a>
+                <a class="card project" href="https://github.com/hillarydunkley16/invoice-reminder-agent" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>n8n workflow</span><span class="accent">GitHub ↗</span></p>
+                    <h3>Invoice Reminder Agent</h3>
+                    <p>Drafts overdue-invoice emails with Gemini as structured JSON, then routes each one through a human approval step before Gmail sends it.</p>
+                </a>
+                <a class="card project" href="https://github.com/hillarydunkley16/videoEssayLetterBoxd" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>Full stack</span><span class="accent">GitHub ↗</span></p>
+                    <h3>Video Essay Letterboxd</h3>
+                    <p>A Letterboxd-style diary for video essays with accounts, logs, reviews and search. Work in progress.</p>
+                </a>
+                <a class="card project" href="https://github.com/hillarydunkley16/wellBE" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>Hackathon</span><span class="accent">GitHub ↗</span></p>
+                    <h3>wellBE</h3>
+                    <p>Food, activity and symptom logging that emphasizes macros over calories. Won the Panera Hack for a Healthier Happier World prize.</p>
+                </a>
+                <a class="card project" href="https://github.com/hillarydunkley16/ProPublica-Crime-Stats-Analysis" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>Java · data analysis</span><span class="accent">GitHub ↗</span></p>
+                    <h3>Criminal Justice</h3>
+                    <p>Supplemental analysis of ProPublica's machine-bias study of recidivism software, by crime severity, race and gender.</p>
+                </a>
+                <a class="card project project-wide" href="https://beccabelofsky.com/" target="_blank" rel="noopener">
+                    <p class="project-meta"><span>Freelance · WordPress</span><span class="accent">Visit site ↗</span></p>
+                    <h3>Becca Belofsky</h3>
+                    <p>Designed and prototyped in Figma, then built in WordPress: a website for Becca Belofsky, a mental health educator specializing in hoarding disorder.</p>
+                </a>
+            </div>
+            <p class="more-link">Older coursework and more repos are on <a href="https://github.com/hillarydunkley16" target="_blank" rel="noopener">GitHub</a>.</p>
+        </section>
+
+        <section id="contact" class="container section contact-section">
+            <div class="contact">
+                <p class="eyebrow eyebrow-light">05 / Contact</p>
+                <h2>Hiring for AI/LLM engineering in NYC? Let's talk.</h2>
+                <div class="button-row">
+                    <a href="mailto:hvgdunkley@gmail.com" class="btn btn-butter">hvgdunkley@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/hillary-dunkley" target="_blank" rel="noopener" class="btn btn-outline-light">LinkedIn</a>
+                    <a href="https://github.com/hillarydunkley16" target="_blank" rel="noopener" class="btn btn-outline-light">GitHub</a>
+                </div>
+                <img class="contact-sign" src="assets/signature.png" alt="" width="160" height="91">
+            </div>
+        </section>
     </main>
-        <script src = 'main.js'></script>
-        <script src = "typing.js"></script>
-        <script src="https://kit.fontawesome.com/c69731a102.js" crossorigin="anonymous"></script>
-        <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap'); </style>
-    </body>
+
+    <script src="typing.js"></script>
+</body>
 </html>
