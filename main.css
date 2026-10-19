@@ -135,6 +135,10 @@ h2 { font-size: 36px; line-height: 1.1; letter-spacing: -0.025em; font-weight: 8
 
 @media (max-width: 640px) {
     .container { padding-left: 16px; padding-right: 16px; }
+    .nav-bar { gap: 8px; }
+    .wordmark { display: none; }
+    .nav-links { flex: 1 1 100%; flex-wrap: nowrap; justify-content: space-between; gap: 6px; font-size: 13px; }
+    .nav-links a.pill-dark { padding: 8px 14px; }
     .hero { padding: 36px 24px; gap: 32px; }
     .hero-sub { font-size: 16px; }
     .section { padding-top: 48px; padding-bottom: 48px; }
@@ -146,6 +150,8 @@ h2 { font-size: 36px; line-height: 1.1; letter-spacing: -0.025em; font-weight: 8
     .contact { padding: 40px 24px; }
     .contact h2 { font-size: 32px; }
     .sign-card { padding: 24px; }
+    .sign-card img { width: 192px; }
+    .contact-sign { width: 128px; }
     .job-dates { flex-basis: 100%; }
     .button-row .btn { width: 100%; text-align: center; }
 }
