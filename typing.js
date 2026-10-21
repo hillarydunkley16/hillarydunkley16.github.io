@@ -1,41 +1,35 @@
-const typedTextSpan = document.getElementById("typed-text");
-const cursorSpan = document.getElementById("cursor");
+const typedText = document.getElementById("typed-text");
 
-const textArray = ["student", "musician", "programmer"];
-const typingDelay = 100;
-const erasingDelay = 350;
-const newTextDelay = 400; // Delay between current and next text
-let textArrayIndex = 0;
+const phrases = ["builds LLM systems", "designs agent workflows", "writes Python & Go", "cuts review time"];
+const typingDelay = 90;
+const erasingDelay = 40;
+const holdDelay = 1500;
+const nextPhraseDelay = 350;
+
+let phraseIndex = 0;
 let charIndex = 0;
+let erasing = false;
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
+function tick() {
+  const phrase = phrases[phraseIndex];
+  charIndex += erasing ? -1 : 1;
+  typedText.textContent = phrase.slice(0, charIndex);
+
+  let delay = erasing ? erasingDelay : typingDelay;
+  if (!erasing && charIndex === phrase.length) {
+    erasing = true;
+    delay = holdDelay;
+  } else if (erasing && charIndex === 0) {
+    erasing = false;
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+    delay = nextPhraseDelay;
   }
+  setTimeout(tick, delay);
 }
 
-function erase() {
-  if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (typedText && !prefersReducedMotion) {
+  charIndex = typedText.textContent.length;
+  erasing = true;
+  setTimeout(tick, holdDelay);
 }
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  setTimeout(type(), newTextDelay + 250);
-});
